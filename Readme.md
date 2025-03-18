@@ -2,7 +2,7 @@
 
 * Студент: [Сергей Никитин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2514051).
 * Наставник: [Алиса Пепел](https://htmlacademy.ru/profile/id615601).
-
+* Сайт: [Седона] (https://goose12340.github.io/2514051-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
