@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Никитин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2514051).
-* Наставник: `Алиса Пепел`(https://htmlacademy.ru/profile/id615601).
+* Наставник: [Алиса Пепел](https://htmlacademy.ru/profile/id615601).
 
 ---
 
