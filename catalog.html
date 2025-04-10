@@ -13,7 +13,7 @@
   <body>
     <header class="catalog-header" data-test="header">
       <a class="logo" href="index.html">
-        <img class="logo-sedona" src="#" alt="Логотип Седоны">
+        <img class="logo-sedona" src="images/logotypes/logotype-sedona.svg" width="138" height="64" alt="Логотип Седоны">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -49,7 +49,7 @@
     <main class="main-catalog" data-test="main">
       <header class="main-catalog-header">
         <h1 class="main-catalog-title"> Гостиницы Седоны </h1>
-        <img class="header-catalog-background-image" src="#" alt="Виды на горы Седоны">
+        <img class="header-catalog-background-image" src="images/background/background-filter.jpg" width="1200" height="412" alt="Виды на горы Седоны">
         <ul class="breadcrumps">
           <li class="breadcrumps-item">
             <a class="breadcrumps-link" href="index.html">
@@ -112,8 +112,8 @@
               </li>
             </ul>
           </fieldset>
-          <input class="button button-apply" type="submit" value="Применить">
-          <input class="button button-reset" type="reset" value="Сбросить">
+          <button class="button button-apply" type="submit"> Применить </button>
+          <button class="button button-reset" type="reset"> Сбросить </button>
         </form>
 
         <div class="sorting" data-test="catalog">
@@ -136,14 +136,14 @@
         </div>
         <ul class="prodacts-list">
           <li class="prodauct-card">
-            <img class="product-card-image" src="#" alt="Виды Amara Resort & Spa">
+            <img class="product-card-image" src="images/cards-hotels/hotel-1.jpg" width="300" height="212" alt="Виды Amara Resort & Spa">
             <h3 class="product-card-title"> Amara Resort & Spa </h3>
             <dl class="product-card-price">
               <dt> Гостиница </dt>
               <dd> От 4000 ₽ </dd>
             </dl>
             <a class="button button-detailed" href="#"> Подробнее </a>
-            <button class="button button-in-favourites" type="submit" name="in-favourites"> В избранное </button>
+            <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
             <dl class="product-card-rating">
               <dt class="vissualy-hidden stars-of-raiting">Звёзды рейтинга </dt>
               <dd class="raiting"> Рейтинг: 8,5 </dd>
@@ -151,14 +151,14 @@
           </li>
 
           <li class="prodauct-card">
-            <img class="product-card-image" src="#" alt="Виды Villas at Poco Diablo">
+            <img class="product-card-image" src="images/cards-hotels/hotel-2.jpg" width="300" height="212" alt="Виды Villas at Poco Diablo">
             <h3 class="product-card-title"> Villas at Poco Diablo </h3>
             <dl class="product-card-price">
               <dt> Гостиница </dt>
               <dd> От 5000 ₽ </dd>
             </dl>
             <a class="button button-detailed" href="#"> Подробнее </a>
-            <button class="button button-favourites" type="reset" name="favourites"> В избранном </button>
+            <button class="button button-favourites" type="button" name="favourites"> В избранном </button>
             <dl class="product-card-rating">
               <dt class="vissualy-hidden stars-of-raiting">Звёзды рейтинга </dt>
               <dd class="raiting"> Рейтинг: 9,2 </dd>
@@ -166,14 +166,14 @@
           </li>
 
           <li class="prodauct-card">
-            <img class="product-card-image" src="#" alt="Виды Desert Quail Inn">
+            <img class="product-card-image" src="images/cards-hotels/hotel-3.jpg" width="300" height="212" alt="Виды Desert Quail Inn">
             <h3 class="product-card-title"> Desert Quail Inn </h3>
             <dl class="product-card-price">
               <dt> Гостиница </dt>
               <dd> От 2500 ₽ </dd>
             </dl>
             <a class="button button-detailed" href="#"> Подробнее </a>
-            <button class="button button-in-favourites" type="submit" name="in-favourites"> В избранное </button>
+            <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
             <dl class="product-card-rating">
               <dt class="vissualy-hidden stars-of-raiting">Звёзды рейтинга </dt>
               <dd class="raiting"> Рейтинг: 6,9 </dd>
@@ -181,14 +181,14 @@
           </li>
 
           <li class="prodauct-card">
-            <img class="product-card-image" src="#" alt="Виды GreenTree Inn">
+            <img class="product-card-image" src="images/cards-hotels/hotel-4.jpg" width="300" height="212" alt="Виды GreenTree Inn">
             <h3 class="product-card-title"> GreenTree Inn </h3>
             <dl class="product-card-price">
               <dt> Гостиница </dt>
               <dd> От 1500 ₽ </dd>
             </dl>
             <a class="button button-detailed" href="#"> Подробнее </a>
-            <button class="button button-in-favourites" type="submit" name="in-favourites"> В избранное </button>
+            <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
             <dl class="product-card-rating">
               <dt class="vissualy-hidden stars-of-raiting">Звёзды рейтинга </dt>
               <dd class="raiting"> Рейтинг: 5,0 </dd>
@@ -210,7 +210,7 @@
             <a class="pagination-link" href="#"> 4 </a>
           </li>
           <li class="pagination-item">
-            <p> ... </p>
+            <span> ... </span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#"> 10 </a>
@@ -229,29 +229,29 @@
     </main>
 
     <footer class="catalog-footer" data-test="footer">
-      <section class="footer-social">
-        <h2 class="vissualy-hidden"> Социальные сети </h2>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a class="social-list-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden"> ВКонтакте </span>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-list-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden"> Телеграм </span>
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-list-link" href=" https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden"> Ютуб </span>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://vk.com/htmlacademy">
+            <img class="social-icon" src="images/social-icons/social-vk.svg" width="47" height="40" alt="ВКонтакте">
+            <span class="visually-hidden"> ВКонтакте </span>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href="https://t.me/htmlacademy">
+            <img class="social-icon" src="images/social-icons/social-telegram.svg" width="47" height="40" alt="Телеграм">
+            <span class="visually-hidden"> Телеграм </span>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="social-list-link" href=" https://www.youtube.com/user/htmlacademyru">
+            <img class="social-icon" src="images/social-icons/social-youtube.svg" width="47" height="40" alt="Ютуб">
+            <span class="visually-hidden"> Ютуб </span>
+          </a>
+        </li>
+      </ul>
       <a class="footer-phone" href="tel:+78128121212"> +7 (812) 812-12-12 </a>
       <a class="link-logo-HTML-Acedemy" href="https://htmlacademy.ru/">
-        <img class="logo-HTML-Acedemy" src="#" alt="логотип HTML-Acedemy">
+        <img class="logo-HTML-Acedemy" src="images/logotypes/logotype-academy.svg" width="115" height="33" alt="логотип HTML-Acedemy">
       </a>
     </footer>
   </body>
