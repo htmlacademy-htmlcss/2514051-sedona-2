@@ -14,20 +14,37 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
   color: #000000;
+
 }
 
-.main-wrapper {
+.page-wrapper {
   background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .inner-wrapper {
   background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-wrapper {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -57,6 +74,7 @@ body {
 
 .navigation-item .button {
   color: #FFFFFF;
+  width: 160px;
 }
 
 .button-search,
@@ -69,6 +87,28 @@ body {
   background-color: #82B3D3;
 }
 
+.main-header {
+  display: flex;
+}
+
+.inner-header {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -76,11 +116,21 @@ body {
   text-align: center;
   color: #000000;
   font-weight: 700;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
-
 
 .navigation-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 430px;
+}
+
+.navigation-user {
+  max-width: 290px;
+  margin-left: auto;
 }
 
 .favourites-number {
@@ -88,6 +138,11 @@ body {
   line-height: 10px;
   color: #FFFFFF;
   background-color: #7DB54F;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -129,6 +184,24 @@ body {
 .advantages-list,
 .services-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.advantages-list-item,
+.services-list-item {
+  width: 400px;
+}
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantages-photo {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-list-description {
@@ -198,6 +271,13 @@ body {
   color: #FFFFFF;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .subscribe-footer {
   background-image: none;
 }
@@ -216,9 +296,16 @@ body {
   color: #333333;
 }
 
-
 .social-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list-link {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-phone {
@@ -227,6 +314,15 @@ body {
   text-decoration: none;
   text-align: center;
   color: #000000;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.link-logo-Academy {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-container {
@@ -251,6 +347,13 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-products {
+  display: flex;
 }
 
 .catalog-filter {
@@ -259,6 +362,8 @@ body {
 
 .catalog-filter-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-filter-title {
