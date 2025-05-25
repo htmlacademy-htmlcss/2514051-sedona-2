@@ -73,6 +73,9 @@ body {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-item .button {
@@ -265,6 +268,15 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list-item {
+  padding: 102px 85px;
+}
+
+.services-list-item {
+  padding: 81px 85px;
 }
 
 .advantages-list {
@@ -277,6 +289,13 @@ body {
   margin: 0;
 }
 
+.services-photo {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px
+}
+
 .advantages-list-description,
 .services-list-description {
   color: #333333;
@@ -287,6 +306,7 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   width: 100%;
+  padding: 0;
   flex-direction: row;
 }
 
@@ -295,34 +315,16 @@ body {
 }
 
 .advantages-list-title {
-  margin-top: 112px;
   margin-bottom: 62px;
 }
 
-.advantages-list-description {
-  margin-bottom: 112px;
-}
-
 .services-list-title {
-  margin-top: 183px;
   margin-bottom: 30px;
-}
-
-.services-list-description {
-  margin-bottom: 81px;
 }
 
 .advantages-flex-container {
   flex-direction: column;
-}
-
-.advantages-flex-container .advantages-list-title {
-  margin-top: 102px;
-  margin-bottom: 62px;
-}
-
-.advantages-flex-container .advantages-list-description {
-  margin-bottom: 102px;
+  padding: 102px 85px;
 }
 
 .advantages-wide .advantages-list-description {
@@ -623,10 +625,12 @@ body {
 .cards-view-container .button {
   height: 48px;
   width: 48px;
+  background-color: #FFFFFF;
+  border: 2px solid #E5E5E5;
 }
 
 .cards-view-container .button:not(:last-child) {
-  margin-right: 0;
+  margin-right: 8px;
 }
 
 .products-list {
@@ -673,14 +677,17 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  padding: 0;
-  margin: 80px 70px;
-  margin-bottom: 60px;
+  padding: 80px 70px;
+  padding-bottom: 60px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.pagination-link {
+.pagination-link,
+.pagination-dotted {
+  padding: 0;
+  margin: 0;
   display: flex;
   text-align: center;
   text-decoration: none;
@@ -692,7 +699,16 @@ body {
   align-items: center;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-current-link {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.pagination-dotted {
+color: #000000;
+background-color: #FFFFFF;
 }
