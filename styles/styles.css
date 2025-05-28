@@ -672,6 +672,7 @@ body {
   min-height: 438px;
   max-width: 340px;
   border: 1px solid #E5E5E5;
+  border-radius: 4px;
   padding: 20px;
   display: grid;
   grid-template-columns: 1, 300px;
