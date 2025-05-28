@@ -664,7 +664,6 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
   gap: 20px;
 }
 
@@ -675,7 +674,6 @@ body {
   border-radius: 4px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1, 300px;
   grid-template-rows: repeat(5, auto);
   gap: 16px;
 }
@@ -696,21 +694,20 @@ body {
   font-size: inherit;
   line-height: inherit;
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  grid-template-rows: repeat(1, 21px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .card-buttons-container,
 .product-card-raiting {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  grid-template-rows: repeat(1, 36px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .product-card-cost {
   margin: 0;
+  text-align: end;
 }
 
 .button-detailed {
@@ -746,6 +743,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #F2F2F2;
+  border-radius: 4px;
   margin: 0;
   padding: 9px 22px 8px 23px;
   max-width: 140px
