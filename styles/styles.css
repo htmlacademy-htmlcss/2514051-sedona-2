@@ -63,6 +63,7 @@ body {
   overflow: hidden;
 }
 
+/* Buttons */
 .button {
   font-family: "PT Sans";
   font-size: 16px;
@@ -193,6 +194,7 @@ body {
 /* Advantages and Services*/
 .advantages {
   text-align: center;
+  padding-top: 69px;
 }
 
 .advantages-title {
@@ -213,7 +215,6 @@ body {
 }
 
 .advantages-title-top {
-  margin-top: 69px;
   margin-bottom: 25px;
   width: 660px;
   margin-left: auto;
@@ -433,7 +434,7 @@ body {
 .page-footer-container {
   display: flex;
   width: 1060px;
-  padding: 40px 70px;
+  padding: 40px 0;
   padding-bottom: 30px;
   margin: 0 auto;
   justify-content: space-between;
@@ -447,16 +448,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
 }
 
 .social-list-item {
   min-width: 24px;
+  max-width: 48px;
 }
 
 .social-list-link {
   display: block;
   padding: 12px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: block;
+  padding: 0;
   margin: 0;
 }
 
@@ -472,6 +480,13 @@ body {
 }
 
 .link-logo-Academy {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.logo-Academy {
   display: block;
   padding: 0;
   margin: 0;
@@ -633,35 +648,88 @@ body {
   margin-right: 8px;
 }
 
+/* Product-cards*/
 .products-list {
+  width: 1060px;
   list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.product-card {
+  min-height: 438px;
+  max-width: 340px;
+  border: 1px solid #E5E5E5;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1, 300px;
+  grid-template-rows: repeat(5, auto);
+  gap: 16px;
+}
+
+.product-card-image {
+  display: block;
 }
 
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  margin: 0;
 }
 
 .product-card-price {
   color: #333333;
   font-size: inherit;
   line-height: inherit;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: repeat(1, 21px);
+  gap: 20px;
+}
+
+.card-buttons-container,
+.product-card-raiting {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: repeat(1, 36px);
+  gap: 20px;
+}
+
+.product-card-cost {
+  margin: 0;
 }
 
 .button-detailed {
-  font-size: 16px;
-  line-height: 20px;
+  padding: 8px 26px;
+  max-width: 140px;
 }
 
 .button-in-favourites {
-  font-size: 16px;
-  line-height: 20px;
   background-color: #82B3D3;
+  border: none;
+  padding: 8px 20px;
+
 }
 
 .button-favourites {
   background-color: #7DB54F;
+  border: none;
+  padding: 8px 18px;
+}
+
+.stars-of-raiting {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 140px;
+  background-image: url("../images/star-1.svg");
+  background-size: 18px 17px;
+  background-repeat: no-repeat;
 }
 
 .raiting {
@@ -669,7 +737,12 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #F2F2F2;
+  margin: 0;
+  padding: 9px 22px 8px 23px;
+  max-width: 140px
 }
+
+
 
 /* Pagination*/
 .pagination-list {
@@ -709,6 +782,6 @@ body {
 }
 
 .pagination-dotted {
-color: #000000;
-background-color: #FFFFFF;
+  color: #000000;
+  background-color: #FFFFFF;
 }
