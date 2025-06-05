@@ -433,6 +433,10 @@ body {
   padding-top: 51px;
 }
 
+.hero-welcome {
+  margin-bottom: 20px;
+}
+
 .hero-divider {
   display: block;
   padding: 0;
@@ -921,6 +925,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+
 
 .select-control-flex {
   display: flex;
