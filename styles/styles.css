@@ -85,16 +85,7 @@ body {
 
 .navigation-item .button {
   color: #FFFFFF;
-  padding: 8px 23px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-left: 20px;
-}
-
-.navigation-link .button {
-  padding: 0;
-  margin: 0;
-  min-width: 160px;
+  padding: 8px 34px;
 }
 
 .button-search,
@@ -184,16 +175,16 @@ body {
 }
 
 /*Link of Academy*/
-.link-logo-Academy:hover {
-  color: #756157;
+.link-logo-Academy:hover .logo-Academy {
+  fill: #756157;
 }
 
-.link-logo-Academy:focus {
-  color: #756157;
+.link-logo-Academy:focus .logo-Academy {
+  fill: #756157;
 }
 
-.link-logo-Academy:active {
-  color: #7561574D;
+.link-logo-Academy:active .logo-Academy {
+  fill: #7561574D;
 }
 
 /*Checboxes*/
@@ -297,7 +288,7 @@ body {
 }
 
 /*Pagination buttons*/
-.pagination-item:not(:first-child):hover {
+.pagination-item:not(:first-child) .pagination-link:hover {
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
   border-radius: 4px;
@@ -344,6 +335,8 @@ body {
   padding: 0;
   margin-left: 70px;
   margin-right: 30px;
+  line-height: 0;
+  margin-bottom: -6px;
 }
 
 .navigation-link {
@@ -356,6 +349,11 @@ body {
   display: block;
   padding: 20px 16px;
   margin: 0;
+}
+
+.current-navigation-link {
+  text-decoration: underline 2px solid #756257;
+  text-underline-offset: 1.18em;
 }
 
 .navigation-list {
@@ -372,26 +370,36 @@ body {
   justify-content: end;
 }
 
-.navigation-user .navigation-link {
+.user-button {
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 20px;
+}
+
+.search-link {
+  background-image: url("../images/icons/icon-search.svg");
+}
+
+.favourites-link {
+  background-image: url("../images/icons/icon-heart.svg");
+}
+
+.search-link,
+.favourites-link {
   min-width: 20px;
   min-height: 20px;
-}
-
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("../images/icons/icon-search.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 12px;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("../images/icons/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  padding: 22px 12px;
-  margin: 0;
-
+.search-item,
+.favourites-item {
+  position: relative;
+  width: 42px;
+  align-content: center;
 }
 
 .favourites-number {
@@ -406,7 +414,9 @@ body {
   color: #FFFFFF;
   background-color: #7DB54F;
   border-radius: 10px;
-  transform: translate(9px, -10px);
+  position: absolute;
+  top: -2px;
+  right: 3px;
 }
 
 .page-container {
@@ -421,7 +431,12 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 82px;
+}
+
+.hero-divider {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 /* Advantages and Services*/
@@ -489,6 +504,24 @@ body {
   margin: 0;
 }
 
+
+
+.advantages-wide-line,
+.advantages-line {
+  display: block;
+  margin: 0 85px;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #FFFFFF4D;
+  border: none;
+}
+
+.advantages-line {
+  background-color: #0000004D;
+}
+
 .advantages-list,
 .services-list {
   list-style-type: none;
@@ -549,7 +582,7 @@ body {
 }
 
 .advantages-list-title {
-  margin-bottom: 62px;
+  margin-bottom: 30px;
 }
 
 .services-list-title {
@@ -709,6 +742,7 @@ body {
   display: block;
   padding: 0;
   margin: 0;
+  fill: #83B3D3;
 }
 
 .footer-phone {
@@ -733,6 +767,7 @@ body {
   display: block;
   padding: 0;
   margin: 0;
+  fill: #000000;
 }
 
 /* Inner-page*/
