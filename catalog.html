@@ -62,11 +62,18 @@
               <ul class="breadcrumps">
                 <li class="breadcrumps-item">
                   <a class="breadcrumps-link" href="index.html">
+                    <svg class="breadcrumps-home" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13">
+                      <path  d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                      <path  d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                    </svg>
                     <span class="visually-hidden"> Главная </span>
                   </a>
                 </li>
                 <li class="breadcrumps-item">
-                  <a class="breadcrumps-link"> Гостиницы </a>
+                  <span class="breadcrumps-arrow"> </span>
+                </li>
+                <li class="breadcrumps-item">
+                  <a class="breadcrumps-link" href="#"> Гостиницы </a>
                 </li>
               </ul>
             </header>
@@ -136,10 +143,10 @@
             <h2 class="sorting-title"> Найдено гостиниц: 38</h2>
             <div class="select-control-flex">
               <select class="select-control" aria-label="Сортировка">
-                <option value="cheap"> Сначала дешёвые </option>
-                <option value="expensive"> Сначала дорогие </option>
-                <option value="high-rating"> Сначала с высоким рейтингом </option>
-                <option value="low-raiting"> Сначала с низким рейтингом </option>
+                <option value="cheap select-states"> Сначала дешёвые </option>
+                <option value="expensive select-states"> Сначала дорогие </option>
+                <option value="high-rating select-states"> Сначала с высоким рейтингом </option>
+                <option value="low-raiting select-states"> Сначала с низким рейтингом </option>
               </select>
               <div class="cards-view-container">
                 <a href="catalog.html?view=card" class="button button-active">
@@ -170,7 +177,7 @@
                 <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
               </div>
               <dl class="product-card-raiting">
-                <dt class="stars-of-raiting"> </dt>
+                <dt class="stars-of-raiting stars-4"> </dt>
                 <dd class="raiting"> Рейтинг: 8,5 </dd>
               </dl>
             </li>
@@ -188,7 +195,7 @@
                 <button class="button button-favourites" type="button" name="favourites"> В избранном </button>
               </div>
               <dl class="product-card-raiting">
-                <dt class="stars-of-raiting"> </dt>
+                <dt class="stars-of-raiting stars-4"> </dt>
                 <dd class="raiting"> Рейтинг: 9,2 </dd>
               </dl>
             </li>
@@ -206,7 +213,7 @@
                 <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
               </div>
               <dl class="product-card-raiting">
-                <dt class=" stars-of-raiting"> </dt>
+                <dt class=" stars-of-raiting stars-3"> </dt>
                 <dd class="raiting"> Рейтинг: 6,9 </dd>
               </dl>
             </li>
@@ -224,7 +231,7 @@
                 <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
               </div>
               <dl class="product-card-raiting">
-                <dt class=" stars-of-raiting"> </dt>
+                <dt class=" stars-of-raiting stars-2"> </dt>
                 <dd class="raiting"> Рейтинг: 5,0 </dd>
               </dl>
             </li>
