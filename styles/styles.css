@@ -188,16 +188,16 @@ body {
 }
 
 /*Checboxes*/
-.control:hover {
+/*.control:hover {
   opacity: 60%;
-}
+}*/
 
 /*.control-input:focus {
 }*/
 
-.control:active {
+/*.control:active {
   opacity: 30%;
-}
+}*/
 
 /* Filter buttons*/
 .button-apply:hover {
@@ -848,6 +848,10 @@ body {
   min-width: 13px;
 }
 
+.breadcrumps-item:last-child .breadcrumps-link {
+  pointer-events: none;
+}
+
 .breadcrumps-home {
   fill: #FFFFFF;
 }
@@ -962,7 +966,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -227px;
+  right: -20px;
 }
 
 .range-wrapper-inputs {
@@ -1021,6 +1025,64 @@ body {
 .range-toggle:active {
   outline: 2px solid #83B3D3;
 }
+
+/*control*/
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+
+.catalog-filter-group:nth-child(2) .control-mark {
+  border-radius: 50%;
+}
+
+.control:hover .control-mark,
+.control:hover {
+  opacity: 60%;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: #333333;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  background-image: url("../images/tick.svg");
+  background-repeat: no-repeat;
+  min-width: 13px;
+  min-height: 11px;
+  background-color: #FFFFFF;
+  content: "";
+}
+
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  content: "";
+}
+
 
 /*Buttons-filter */
 .button-apply {
@@ -1119,6 +1181,7 @@ body {
   border-color: #000000;
   pointer-events: none;
 }
+
 /* Product-cards*/
 .products-list {
   width: 1060px;
