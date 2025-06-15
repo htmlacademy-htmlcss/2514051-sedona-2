@@ -8,6 +8,7 @@
     <meta name="keywords" content="отпуск, Sedona, путешествия, Аризона, США, гостиницы">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico" size="16x16" type="image/x-icon">
     <title> Каталог Седоны </title>
   </head>
 
@@ -118,21 +119,24 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="Hotel" checked>
+                          <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="Hotel"
+                            checked>
                           <span class="control-mark"></span>
                           Гостиница
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="Motel">
+                          <input class="control-input visually-hidden" type="radio" name="type-of-housing"
+                            value="Motel">
                           <span class="control-mark"></span>
                           Мотель
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="Apartments">
+                          <input class="control-input visually-hidden" type="radio" name="type-of-housing"
+                            value="Apartments">
                           <span class="control-mark"></span>
                           Апартаменты
                         </label>
@@ -180,12 +184,14 @@
           <div class="sorting" data-test="catalog">
             <h2 class="sorting-title"> Найдено гостиниц: 38</h2>
             <div class="select-control-flex">
-              <select class="select-control" aria-label="Сортировка">
-                <option class="select-states" value="cheap "> Сначала дешёвые </option>
-                <option class="select-states" value="expensive"> Сначала дорогие </option>
-                <option class="select-states" value="high-rating"> Сначала с высоким рейтингом </option>
-                <option class="select-states" value="low-raiting"> Сначала с низким рейтингом </option>
-              </select>
+              <div class="select-flex">
+                <select class="select-control" aria-label="Сортировка">
+                  <option class="select-states" value="cheap "> Сначала дешёвые </option>
+                  <option class="select-states" value="expensive"> Сначала дорогие </option>
+                  <option class="select-states" value="high-rating"> Сначала с высоким рейтингом </option>
+                  <option class="select-states" value="low-raiting"> Сначала с низким рейтингом </option>
+                </select>
+              </div>
               <div class="cards-view-container">
                 <a href="catalog.html?view=card" class="button button-active">
                   <span class="visually-hidden"> Показать карточки </span>
