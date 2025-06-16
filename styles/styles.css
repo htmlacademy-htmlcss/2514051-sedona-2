@@ -874,24 +874,25 @@ body {
 
 .modal-wrapper {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   margin-bottom: 48px;
-}
-
-.adults-item,
-.childrens-item {
-  display: flex;
 }
 
 .check-in-input,
 .departure-input {
   width: 440px;
   border: none;
+  border-radius: 4px;
   background-color: #F2F2F2;
   padding: 12px 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  background-image: url("../images/modals-icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
   outline: none;
 }
 
@@ -913,8 +914,62 @@ body {
   right: 45px;
 }
 
+.adults-item,
+.childrens-item {
+  display: flex;
+  width: 247px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
+.adults-title,
+.childrens-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
 
+.adults-input,
+.childrens-input {
+  width: 110px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 14px;
+  outline: none;
+
+}
+
+.adults-input[type="number"]::-webkit-inner-spin-button,
+.childrens-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.childrens-minus {
+  position: absolute;
+  left: 155px;
+}
+
+.childrens-plus {
+  position: absolute;
+  right: 15px;
+}
+
+.adults-minus {
+  position: absolute;
+  left: 155px;
+}
+
+.adults-plus {
+  position: absolute;
+  right: 15px;
+}
 
 .button-modal {
   font-family: "PT Sans", sans-serif;
@@ -925,14 +980,16 @@ body {
   color: #FFFFFF;
   background-color: #83B3D3;
   width: 100%;
-  padding: 18px ;
+  padding: 18px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  outline: none;
 }
 
-.modal-container-close {
+/*.modal-container-close {
   display: none;
-}
+}*/
 
 
 /* Inner-page*/
@@ -1036,30 +1093,6 @@ body {
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
 }
-
-/*.control {
-  position: relative;
-  display: block;
-}
-
-.control-mark {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: none;
-  border-radius: 4px;
-
-}
-
-.control:hover .control-mark {
-  opacity: 60%;
-}
-
-.control-input:disabled + .control-mark {
-  border-color: #242424;
-}*/
 
 .control-input {
   line-height: 23px;
