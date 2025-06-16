@@ -115,7 +115,7 @@ body {
   background-color: #615048;
 }
 
-.navigation-item .button:focus  {
+.navigation-item .button:focus {
   background-color: #615048;
 }
 
@@ -790,6 +790,151 @@ body {
   fill: #000000;
 }
 
+/* Modal window*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/modals-icons/modal-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-in-item,
+.departure-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 577px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.check-in,
+.departure {
+  width: 119px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-wrapper {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.adults-item,
+.childrens-item {
+  display: flex;
+}
+
+.check-in-input,
+.departure-input {
+  width: 440px;
+  border: none;
+  background-color: #F2F2F2;
+  padding: 12px 20px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  outline: none;
+}
+
+.mistake-modal,
+.correct-modal {
+  display: block;
+  width: 375px;
+  font-size: 16px;
+}
+
+.mistake-modal {
+  color: #FF5757;
+}
+
+.check-in-item .mistake-modal,
+.departure-item .correct-modal {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+}
+
+
+
+
+.button-modal {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  width: 100%;
+  padding: 18px ;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+
 /* Inner-page*/
 
 .filter-container {
@@ -1068,8 +1213,7 @@ body {
   content: "";
 }
 
-.control-input[type="radio"]:checked + .control-mark::before,
-.control-input[type="radio"]:checked + .control-mark::after {
+.control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   top: 5px;
   left: 5px;

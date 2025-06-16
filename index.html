@@ -201,6 +201,48 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+            <fieldset class="modal-group">
+              <legend class="visually-hidden"> Поля формы поиска гостиницы </legend>
+              <ul class="modal-list">
+                <li class="modal-item check-in-item">
+                  <label class="check-in" for="check-in-date">Дата Заезда:</label>
+                  <input class="check-in-input" type="date" id="check-in-date" placeholder="27 апреля 2020" name="check-in-date">
+                  <span class="mistake-modal"> Мы не можем отправить вас в прошлое. </span>
+                </li>
+                <li class="modal-item departure-item">
+                  <label class="departure" for="departure-date">Дата Выезда:</label>
+                  <input class="departure-input" type="date" id="departure-date" placeholder="1 сентября 2023" name="departure-date">
+                  <span class="correct-modal"> На эти даты есть свободные номера. Пока есть. </span>
+                </li>
+                <div class="modal-wrapper">
+                  <li class="modal-item adults-item">
+                    <label class="adults" for="adults">Взрослые:</label>
+                    <input class="adults-input" type="number" name="adults" placeholder="2" id="adults" min="1"
+                      max="100">
+                  </li>
+                  <li class="modal-item childrens-item">
+                    <label class="childrens" for="childrens">Дети:</label>
+                    <input class="childrens-input" type="number" name="childrens" placeholder="2" id="childrens" min="0"
+                      max="100">
+                  </li>
+                </div>
+                <li class="modal-item">
+                  <button class="button-modal" type="submit">Найти</button>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 
