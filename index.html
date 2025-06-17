@@ -147,7 +147,7 @@
               <p class="subscribe-description"> Только полезная информация и никакого спама, честное бойскаутское! </p>
             </div>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscribe-email" type="email" name="subcribe-email" placeholder="Ваш e-mail">
+              <input class="subscribe-email" type="email" name="subcribe-email" placeholder="Ваш e-mail" required>
               <button class="button button-subscribe" type="submit"> Подписаться </button>
             </form>
           </section>
@@ -217,13 +217,13 @@
                 <li class="modal-item check-in-item">
                   <label class="check-in" for="check-in-date">Дата Заезда:</label>
                   <input class="check-in-input" type="text" id="check-in-date" placeholder="Укажите дату"
-                    value="27 апреля 2020" name="check-in-date">
+                    value="27 апреля 2020" name="check-in-date" required >
                   <span class="mistake-modal"> Мы не можем отправить вас в прошлое. </span>
                 </li>
                 <li class="modal-item departure-item">
                   <label class="departure" for="departure-date">Дата Выезда:</label>
                   <input class="departure-input" type="text" id="departure-date" placeholder="Укажите дату"
-                    value="1 сентября 2023" name="departure-date">
+                    value="1 сентября 2023" name="departure-date" required >
                   <span class="correct-modal"> На эти даты есть свободные номера. Пока есть. </span>
                 </li>
                 <div class="modal-wrapper">
@@ -235,7 +235,7 @@
                         <path d="M0 0v2h14V0H0Z" />
                       </svg>
                     </button>
-                    <input class="adults-input" type="number" name="adults" value="2" id="adults" min="1" max="100">
+                    <input class="adults-input" type="number" name="adults" value="2" id="adults" min="1" max="100" required >
                     <button class="button-plus" type="button">
                       <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
                         viewBox="0 0 14 14">
@@ -263,7 +263,7 @@
                       </svg>
                     </button>
                     <input class="childrens-input" type="number" name="childrens" value="2" id="childrens" min="0"
-                      max="100">
+                      max="100" required >
                     <button class="button-plus" type="button">
                       <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
                         viewBox="0 0 14 14">
