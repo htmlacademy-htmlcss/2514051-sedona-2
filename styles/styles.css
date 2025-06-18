@@ -139,7 +139,7 @@ body {
   color: #FFFFFF4D;
 }
 
-/*Subscibe-button*/
+/*Subsrcibe-button*/
 .button-subscribe:hover {
   background-color: #68A2CA;
 }
@@ -753,7 +753,8 @@ body {
 
 .subscribe-email:hover,
 .subscribe-email:focus {
-  outline: 2px solid #83B3D3;
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 
