@@ -18,7 +18,8 @@ html {
   height: 100%;
 }
 
-* {
+*,
+*::before {
   box-sizing: border-box;
 }
 
