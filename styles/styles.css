@@ -1264,10 +1264,6 @@ body {
 }
 
 /*Catalog */
-.catalog-products {
-  display: flex;
-}
-
 .catalog-filter {
   color: #FFFFFF;
   width: 1060px;
