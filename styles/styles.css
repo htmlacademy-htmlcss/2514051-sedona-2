@@ -67,7 +67,7 @@ body {
 
 /* Buttons */
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -753,7 +753,7 @@ body {
 
 .subscribe-email:hover,
 .subscribe-email:focus {
-  outline:3px solid #82B3D3;
+  outline: 3px solid #82B3D3;
   color: #FFFFFF;
 }
 
@@ -918,6 +918,14 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.people-list {
+  flex-direction: row;
+  width: 577px;
+  margin-bottom: 48px;
 }
 
 .check-in-item,
@@ -1162,7 +1170,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #83B3D3;
-  width: 100%;
+  width: 577px;
   padding: 18px;
   border: none;
   border-radius: 10px;
@@ -1381,7 +1389,7 @@ body {
 }
 
 
-.range-wrapper-inputs .catalog-filter-label:nth-child(2) .range-input {
+.catalog-filter-label:nth-child(2)  .range-input {
   border-radius: 0 4px 4px 0;
 }
 
