@@ -19,7 +19,8 @@ html {
 }
 
 *,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -1263,10 +1264,6 @@ body {
 }
 
 /*Catalog */
-.catalog-products {
-  display: flex;
-}
-
 .catalog-filter {
   color: #FFFFFF;
   width: 1060px;

@@ -58,31 +58,32 @@
       <!--Header-->
       <main class="catalog main-wrapper" data-test="main">
         <div class="page-container">
-          <div class="filter-container">
-            <header class="catalog-header">
-              <h1 class="catalog-title"> Гостиницы Седоны </h1>
-              <ul class="breadcrumps">
-                <li class="breadcrumps-item">
-                  <a class="breadcrumps-link" href="index.html">
-                    <svg class="breadcrumps-home" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"
-                      viewBox="0 0 13 13">
-                      <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
-                      <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
-                    </svg>
-                    <span class="visually-hidden"> Главная </span>
-                  </a>
-                </li>
-                <li class="breadcrumps-item">
-                  <span class="breadcrumps-arrow"> </span>
-                </li>
-                <li class="breadcrumps-item">
-                  <a class="breadcrumps-link" href="#"> Гостиницы </a>
-                </li>
-              </ul>
-            </header>
+          <section class="catalog-products" data-test=" filter">
+            <div class="filter-container">
+              <header class="catalog-header">
+                <h1 class="catalog-title"> Гостиницы Седоны </h1>
+                <ul class="breadcrumps">
+                  <li class="breadcrumps-item">
+                    <a class="breadcrumps-link" href="index.html">
+                      <svg class="breadcrumps-home" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                        fill="none" viewBox="0 0 13 13">
+                        <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                        <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                      </svg>
+                      <span class="visually-hidden"> Главная </span>
+                    </a>
+                  </li>
+                  <li class="breadcrumps-item">
+                    <span class="breadcrumps-arrow"> </span>
+                  </li>
+                  <li class="breadcrumps-item">
+                    <a class="breadcrumps-link" href="#"> Гостиницы </a>
+                  </li>
+                </ul>
+              </header>
 
-            <!--Catalog-filter-->
-            <section class="catalog-products" data-test=" filter">
+              <!--Catalog-filter-->
+
               <h2 class="visually-hidden"> Каталог товаров с фильтрами </h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -178,130 +179,130 @@
                   <button class="button button-reset" type="reset"> Сбросить </button>
                 </div>
               </form>
-          </div>
+            </div>
 
-          <!--Sorting-->
-          <div class="sorting" data-test="catalog">
-            <h2 class="sorting-title"> Найдено гостиниц: 38</h2>
-            <div class="select-control-flex">
-              <div class="select-flex">
-                <select class="select-control" aria-label="Сортировка">
-                  <option class="select-states" value="cheap "> Сначала дешёвые </option>
-                  <option class="select-states" value="expensive"> Сначала дорогие </option>
-                  <option class="select-states" value="high-rating"> Сначала с высоким рейтингом </option>
-                  <option class="select-states" value="low-raiting"> Сначала с низким рейтингом </option>
-                </select>
-              </div>
-              <div class="cards-view-container">
-                <a href="catalog.html?view=card" class="button button-active">
-                  <span class="visually-hidden"> Показать карточки </span>
-                </a>
-                <a href="catalog.html?view=tile" class="button">
-                  <span class="visually-hidden"> Показать плиткой </span>
-                </a>
-                <a href="catalog.html?view=list" class="button">
-                  <span class="visually-hidden"> Показать список </span>
-                </a>
+            <!--Sorting-->
+            <div class="sorting" data-test="catalog">
+              <h2 class="sorting-title"> Найдено гостиниц: 38</h2>
+              <div class="select-control-flex">
+                <div class="select-flex">
+                  <select class="select-control" aria-label="Сортировка">
+                    <option class="select-states" value="cheap "> Сначала дешёвые </option>
+                    <option class="select-states" value="expensive"> Сначала дорогие </option>
+                    <option class="select-states" value="high-rating"> Сначала с высоким рейтингом </option>
+                    <option class="select-states" value="low-raiting"> Сначала с низким рейтингом </option>
+                  </select>
+                </div>
+                <div class="cards-view-container">
+                  <a href="catalog.html?view=card" class="button button-active">
+                    <span class="visually-hidden"> Показать карточки </span>
+                  </a>
+                  <a href="catalog.html?view=tile" class="button">
+                    <span class="visually-hidden"> Показать плиткой </span>
+                  </a>
+                  <a href="catalog.html?view=list" class="button">
+                    <span class="visually-hidden"> Показать список </span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!--Product-cards-->
-          <ul class="products-list">
-            <li class="product-card">
-              <img class="product-card-image" src="images/cards-hotels/hotel-1.jpg" width="300" height="212"
-                alt="Виды Amara Resort & Spa">
-              <h3 class="product-card-title"> Amara Resort & Spa </h3>
-              <dl class="product-card-price">
-                <dt class="product-card-hotel"> Гостиница </dt>
-                <dd class="product-card-cost"> От 4000 ₽ </dd>
-              </dl>
-              <div class="card-buttons-container">
-                <a class="button button-detailed" href="#"> Подробнее </a>
-                <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
-              </div>
-              <dl class="product-card-raiting">
-                <dt class="stars-of-raiting stars-4"> </dt>
-                <dd class="raiting"> Рейтинг: 8,5 </dd>
-              </dl>
-            </li>
+            <!--Product-cards-->
+            <ul class="products-list">
+              <li class="product-card">
+                <img class="product-card-image" src="images/cards-hotels/hotel-1.jpg" width="300" height="212"
+                  alt="Виды Amara Resort & Spa">
+                <h3 class="product-card-title"> Amara Resort & Spa </h3>
+                <dl class="product-card-price">
+                  <dt class="product-card-hotel"> Гостиница </dt>
+                  <dd class="product-card-cost"> От 4000 ₽ </dd>
+                </dl>
+                <div class="card-buttons-container">
+                  <a class="button button-detailed" href="#"> Подробнее </a>
+                  <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
+                </div>
+                <dl class="product-card-raiting">
+                  <dt class="stars-of-raiting stars-4"> </dt>
+                  <dd class="raiting"> Рейтинг: 8,5 </dd>
+                </dl>
+              </li>
 
-            <li class="product-card">
-              <img class="product-card-image" src="images/cards-hotels/hotel-2.jpg" width="300" height="212"
-                alt="Виды Villas at Poco Diablo">
-              <h3 class="product-card-title"> Villas at Poco Diablo </h3>
-              <dl class="product-card-price">
-                <dt class="product-card-hotel"> Гостиница </dt>
-                <dd class="product-card-cost"> От 5000 ₽ </dd>
-              </dl>
-              <div class="card-buttons-container">
-                <a class="button button-detailed" href="#"> Подробнее </a>
-                <button class="button button-favourites" type="button" name="favourites"> В избранном </button>
-              </div>
-              <dl class="product-card-raiting">
-                <dt class="stars-of-raiting stars-4"> </dt>
-                <dd class="raiting"> Рейтинг: 9,2 </dd>
-              </dl>
-            </li>
+              <li class="product-card">
+                <img class="product-card-image" src="images/cards-hotels/hotel-2.jpg" width="300" height="212"
+                  alt="Виды Villas at Poco Diablo">
+                <h3 class="product-card-title"> Villas at Poco Diablo </h3>
+                <dl class="product-card-price">
+                  <dt class="product-card-hotel"> Гостиница </dt>
+                  <dd class="product-card-cost"> От 5000 ₽ </dd>
+                </dl>
+                <div class="card-buttons-container">
+                  <a class="button button-detailed" href="#"> Подробнее </a>
+                  <button class="button button-favourites" type="button" name="favourites"> В избранном </button>
+                </div>
+                <dl class="product-card-raiting">
+                  <dt class="stars-of-raiting stars-4"> </dt>
+                  <dd class="raiting"> Рейтинг: 9,2 </dd>
+                </dl>
+              </li>
 
-            <li class="product-card">
-              <img class="product-card-image" src="images/cards-hotels/hotel-3.jpg" width="300" height="212"
-                alt="Виды Desert Quail Inn">
-              <h3 class="product-card-title"> Desert Quail Inn </h3>
-              <dl class="product-card-price">
-                <dt class="product-card-hotel"> Гостиница </dt>
-                <dd class="product-card-cost"> От 2500 ₽ </dd>
-              </dl>
-              <div class="card-buttons-container">
-                <a class="button button-detailed" href="#"> Подробнее </a>
-                <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
-              </div>
-              <dl class="product-card-raiting">
-                <dt class=" stars-of-raiting stars-3"> </dt>
-                <dd class="raiting"> Рейтинг: 6,9 </dd>
-              </dl>
-            </li>
+              <li class="product-card">
+                <img class="product-card-image" src="images/cards-hotels/hotel-3.jpg" width="300" height="212"
+                  alt="Виды Desert Quail Inn">
+                <h3 class="product-card-title"> Desert Quail Inn </h3>
+                <dl class="product-card-price">
+                  <dt class="product-card-hotel"> Гостиница </dt>
+                  <dd class="product-card-cost"> От 2500 ₽ </dd>
+                </dl>
+                <div class="card-buttons-container">
+                  <a class="button button-detailed" href="#"> Подробнее </a>
+                  <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
+                </div>
+                <dl class="product-card-raiting">
+                  <dt class=" stars-of-raiting stars-3"> </dt>
+                  <dd class="raiting"> Рейтинг: 6,9 </dd>
+                </dl>
+              </li>
 
-            <li class="product-card">
-              <img class="product-card-image" src="images/cards-hotels/hotel-4.jpg" width="300" height="212"
-                alt="Виды GreenTree Inn">
-              <h3 class="product-card-title"> GreenTree Inn </h3>
-              <dl class="product-card-price">
-                <dt class="product-card-hotel"> Гостиница </dt>
-                <dd class="product-card-cost"> От 1500 ₽ </dd>
-              </dl>
-              <div class="card-buttons-container">
-                <a class="button button-detailed" href="#"> Подробнее </a>
-                <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
-              </div>
-              <dl class="product-card-raiting">
-                <dt class=" stars-of-raiting stars-2"> </dt>
-                <dd class="raiting"> Рейтинг: 5,0 </dd>
-              </dl>
-            </li>
-          </ul>
+              <li class="product-card">
+                <img class="product-card-image" src="images/cards-hotels/hotel-4.jpg" width="300" height="212"
+                  alt="Виды GreenTree Inn">
+                <h3 class="product-card-title"> GreenTree Inn </h3>
+                <dl class="product-card-price">
+                  <dt class="product-card-hotel"> Гостиница </dt>
+                  <dd class="product-card-cost"> От 1500 ₽ </dd>
+                </dl>
+                <div class="card-buttons-container">
+                  <a class="button button-detailed" href="#"> Подробнее </a>
+                  <button class="button button-in-favourites" type="button" name="in-favourites"> В избранное </button>
+                </div>
+                <dl class="product-card-raiting">
+                  <dt class=" stars-of-raiting stars-2"> </dt>
+                  <dd class="raiting"> Рейтинг: 5,0 </dd>
+                </dl>
+              </li>
+            </ul>
 
-          <!--Pagination-->
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current-link" href="#"> 1 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 2 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 3 </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 4 </a>
-            </li>
-            <li class="pagination-item">
-              <span class="pagination-dotted"> ... </span>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#"> 10 </a>
-            </li>
-          </ul>
+            <!--Pagination-->
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current-link" href="#"> 1 </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#"> 2 </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#"> 3 </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#"> 4 </a>
+              </li>
+              <li class="pagination-item">
+                <span class="pagination-dotted"> ... </span>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#"> 10 </a>
+              </li>
+            </ul>
           </section>
 
           <!--Subscribe-->
