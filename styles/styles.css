@@ -86,6 +86,12 @@ body {
   outline: none;
 }
 
+button:disabled {
+  background-color: #E5E5E5;
+  cursor: none;
+  pointer-events: none;
+}
+
 .navigation-item .button {
   color: #FFFFFF;
   padding: 8px 34px;
@@ -349,7 +355,7 @@ body {
   margin: 0 auto;
   margin-right: 70px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .logo {
@@ -404,9 +410,11 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 430px;
+  max-width: 430px;
+  min-height: 64px;
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .navigation-user {
@@ -421,7 +429,9 @@ body {
   max-width: 170px;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 14px;
   margin-left: 20px;
+
 }
 
 .search-link {
@@ -445,6 +455,7 @@ body {
 .search-link:hover,
 .favourites-link:hover {
   outline: none;
+  opacity: 20%;
 }
 
 .search-link:focus,
@@ -490,21 +501,14 @@ body {
 
 /*Hero*/
 .hero {
-  background-image: url("../images/background/background-welcome.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-image: url("../images/divider.svg"), url("../images/background/background-welcome.jpg");
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
   text-align: center;
   padding-top: 51px;
-}
-
-.hero-welcome {
-  margin-bottom: 20px;
-}
-
-.hero-divider {
-  display: block;
-  padding: 0;
-  margin: 0;
+  padding-bottom: 79px;
+  background-color: #000000;
 }
 
 /* Advantages and Services*/
@@ -577,7 +581,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -35px;
+  bottom: -31px;
   width: 60px;
   height: 2px;
   background-color: #0000004D;
@@ -609,7 +613,8 @@ body {
 }
 
 .services-list-item {
-  padding: 81px 85px;
+  padding: 183px 85px;
+  padding-bottom: 81px;
 }
 
 .advantages-photo {
@@ -618,11 +623,22 @@ body {
   margin: 0;
 }
 
-.services-photo {
-  display: block;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px
+.services-house {
+  background-image: url("../images/services-icons/services-house.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 26%;
+}
+
+.services-food {
+  background-image: url("../images/services-icons/services-food.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 26%;
+}
+
+.services-present {
+  background-image: url("../images/services-icons/services-present.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 26%;
 }
 
 .advantages-list-description,
@@ -703,8 +719,9 @@ body {
 .subscribe {
   text-align: center;
   background-image: url("../images/background/background-subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #000000;
 }
 
 .subscribe-title {
@@ -759,9 +776,16 @@ body {
   color: #FFFFFF;
 }
 
+.subscibe-email:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  outline: 3px solid rgba(0, 0, 0, 0.3);
+}
+
 
 .subscribe-inner {
   background-image: none;
+  background-color: #FFFFFF;
 }
 
 .subscribe-inner-title {
@@ -783,7 +807,7 @@ body {
 .page-footer-container {
   display: flex;
   width: 1060px;
-  padding: 40px 0;
+  padding: 45px 0;
   padding-bottom: 30px;
   margin: 0 auto;
   justify-content: space-between;
@@ -800,7 +824,7 @@ body {
 }
 
 .social-list-item {
-  min-width: 24px;
+  min-width: 47px;
   max-width: 48px;
 }
 
@@ -827,6 +851,7 @@ body {
   display: block;
   padding: 0;
   margin: 0;
+  min-width: 331px;
 }
 
 .link-logo-Academy {
@@ -1208,6 +1233,7 @@ body {
   flex-direction: column;
   padding: 35px 70px;
   padding-bottom: 70px;
+  background-color: #000000;
 }
 
 
@@ -1387,7 +1413,7 @@ body {
 }
 
 
-.catalog-filter-label:nth-child(2)  .range-input {
+.catalog-filter-label:nth-child(2) .range-input {
   border-radius: 0 4px 4px 0;
 }
 
@@ -1399,14 +1425,17 @@ body {
 
 .range-toggle:hover {
   background-color: inherit;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   outline: 2px solid #83B3D3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 /*control*/
@@ -1508,7 +1537,7 @@ body {
 .sorting {
   display: flex;
   margin: 50px 70px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   justify-content: space-between;
   align-items: center;
 }
@@ -1551,7 +1580,9 @@ body {
 
 .cards-view-container {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
+  max-width: 300px;
 }
 
 .cards-view-container .button {
