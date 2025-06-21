@@ -355,7 +355,7 @@ button:disabled {
   margin: 0 auto;
   margin-right: 70px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .logo {
@@ -414,11 +414,11 @@ button:disabled {
   min-height: 64px;
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .navigation-user {
   max-width: 290px;
-  min-height: 64px;
   justify-content: end;
 }
 
@@ -581,7 +581,7 @@ button:disabled {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -35px;
+  bottom: -31px;
   width: 60px;
   height: 2px;
   background-color: #0000004D;
@@ -1537,7 +1537,7 @@ button:disabled {
 .sorting {
   display: flex;
   margin: 50px 70px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   justify-content: space-between;
   align-items: center;
 }
