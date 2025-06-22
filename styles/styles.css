@@ -806,6 +806,7 @@ button:disabled {
 /*Footer*/
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   padding: 45px 0;
   padding-bottom: 30px;
@@ -1536,7 +1537,7 @@ button:disabled {
 /*Sorting */
 .sorting {
   display: flex;
-  margin: 50px 70px;
+  margin: 45px 70px;
   margin-bottom: 37px;
   justify-content: space-between;
   align-items: center;
@@ -1548,17 +1549,20 @@ button:disabled {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 5px;
 }
 
 .select-flex {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 292px;
 }
 
 .select-control {
   width: 100%;
+  margin-top: 5px;
   padding: 13px 20px;
   padding-right: 44px;
   font-size: inherit;
@@ -1581,6 +1585,7 @@ button:disabled {
 .cards-view-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-left: 70px;
   max-width: 300px;
 }
@@ -1590,25 +1595,26 @@ button:disabled {
   width: 48px;
   background-color: #FFFFFF;
   border: 2px solid #E5E5E5;
+  margin-top: 4px;
 }
 
 .cards-view-container .button:not(:last-child) {
   margin-right: 8px;
 }
 
-.cards-view-container .button:nth-child(1) {
+.cards-view-container .button-card-view {
   background-image: url("../images/icons/icon-cards.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.cards-view-container .button:nth-child(2) {
+.cards-view-container .button-tile-view {
   background-image: url("../images/icons/icon-tile.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.cards-view-container .button:nth-child(3) {
+.cards-view-container .button-list-view {
   background-image: url("../images/icons/icon-list.svg");
   background-repeat: no-repeat;
   background-position: center;
